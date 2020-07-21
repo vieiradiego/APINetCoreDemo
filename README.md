@@ -1,7 +1,8 @@
 # APINetCoreDemo
 Teste para efetuar estudos do funcionamento do GIT, C# e .NETCORE para o trabalho de conclusão de curso de Sistemas de Informação.
 
-Calculator
+#Calculator
+
 */calculator/sum/5/5
 
 */calculator/subtraction/5/2
@@ -14,7 +15,7 @@ Calculator
 
 */calculator/square-root/2
 
-CRUD
+#CRUD
 
 GET */persons
 
