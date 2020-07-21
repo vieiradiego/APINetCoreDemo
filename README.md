@@ -14,8 +14,8 @@ Calculator
 
 */calculator/square-root/2
 
-
 CRUD
+
 GET */persons
 
 GET */persons/1
