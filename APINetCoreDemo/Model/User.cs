@@ -33,7 +33,7 @@ namespace APINetCoreDemo.Model
         public string AuthType { get; set; }
         public bool PasswordNotRequired { get; set; }
         public bool PasswordNeverExpires { get; set; }
-        public bool CannotChangePassword { get; set; }
+        public bool CanNotChangePassword { get; set; }
         public bool ChangePasswordAtLogon { get; set; }
         public string AccountPassword { get; set; }
         public DateTime AccountExpirationDate { get; set; }

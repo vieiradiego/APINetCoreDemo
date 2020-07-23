@@ -31,6 +31,9 @@ namespace APINetCoreDemo
             
             // Dependency
             services.AddScoped<IPersonService, PersonServiceImpl>();
+            services.AddScoped<IUserService, UserServiceImpl>();
+            services.AddScoped<IGroupService, GroupServiceImpl>();
+            services.AddScoped<IDomainService, DomainServiceImpl>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
