@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace APINetCoreDemo.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("v{version:apiVersion}/[controller]")]
+    [ApiVersion("1")]
     public class PersonsController : ControllerBase
     {
         private IPersonService personService;
