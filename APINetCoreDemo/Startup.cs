@@ -1,6 +1,7 @@
 using APINetCoreDemo.Model.Context;
 using APINetCoreDemo.Services;
 using APINetCoreDemo.Services.Implementation;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +19,7 @@ namespace APINetCoreDemo
     {
         public IHostEnvironment _environment { get; }
         public IConfiguration _configuration { get; }
-        private ILogger _logger;
+        private readonly ILogger _logger;
         public Startup(IConfiguration configuration, IHostEnvironment environment, ILogger <Startup> logger)
         {
             _configuration = configuration;
