@@ -16,9 +16,9 @@ namespace APINetCoreDemo
 {
     public class Startup
     {
-        private readonly ILogger _logger;
         public IHostEnvironment _environment { get; }
         public IConfiguration _configuration { get; }
+        private ILogger _logger;
         public Startup(IConfiguration configuration, IHostEnvironment environment, ILogger <Startup> logger)
         {
             _configuration = configuration;
