@@ -31,7 +31,7 @@ namespace APINetCoreDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionString = _configuration["MySqlConnection:MySqlConnectionStriong"];
+            var connectionString = _configuration["MySqlConnection:MySqlConnectionString"];
 
             services.AddDbContext<MySQLContext>(options => options.UseMySql(connectionString));
             
@@ -51,6 +51,7 @@ namespace APINetCoreDemo
                 catch (Exception ex)
                 {
 
+                    _logger.LogInformation("ERRO", ex);
                     _logger.LogCritical("Database migration failed ",ex);
                     throw;
                 }
